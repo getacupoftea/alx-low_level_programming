@@ -1,2 +1,1 @@
-# alx-low_level_programming
-I met Betty
+alx-low_level_programming
