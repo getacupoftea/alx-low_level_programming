@@ -1,29 +1,51 @@
-#include <stdio.h>
+#include "main.h"
 
 /**
- * main - Prints the sum of all multiples of 3 or 5 up to 102
- * Return: Always (Success)
+ * print_times_table - Prints a multiplication table up to param
+ * @n: The number to be treated
+ *
+ * Return: Number matrix
  */
-
-int main(void)
+void print_times_table(int n)
 {
-	int i;
-	long sum;
+	int x, y, z;
 
-	i = 1;
-	while (i <= 1023)
+	if (n >= 0 && n <= 14)
 	{
-		if (i % 3 == 0)
+		for (x = 0; x <= n; x++)
 		{
-			sum += i;
+			for (y = 0; y <= n; y++)
+			{
+				z = x * y;
+				if (z > 99)
+				{
+					_putchar(',');
+					_putchar(32);
+					_putchar((z / 100) + '0');
+					_putchar(((z / 10) % 10) + '0');
+					_putchar((z % 10) + '0');
+				}
+				else if (z > 9)
+				{
+					_putchar(',');
+					_putchar(32);
+					_putchar(32);
+					_putchar(((z / 10) % 10) + '0');
+					_putchar((z % 10) + '0');
+				}
+				else
+				{
+					if (y != 0)
+					{
+						_putchar(',');
+						_putchar(32);
+						_putchar(32);
+						_putchar(32);
+					}
+					_putchar(z + '0');
+				}
+			}
+			_putchar('\n');
 		}
-		else if (i % 5 == 0)
-		{
-			sum += i;
-		}
-		i++;
 	}
-	printf("%ld\n", sum);
-	return (0);
 }
-
