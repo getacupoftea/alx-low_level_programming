@@ -1,1 +1,1 @@
-int mul(int a, int b);
+void more_numbers(void);
