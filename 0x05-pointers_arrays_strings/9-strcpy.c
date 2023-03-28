@@ -1,50 +1,23 @@
 #include "main.h"
 
 /**
- * my_putchar - print `n` elements of an array of integers
- * @var: int type array pointer
- * Description: Numbers must be separated by comma and space.
- * Numbers should be displayed in the same order they are stored in array.
- * You can only use _putchar to print.
+ * *_strcpy -  copies the string pointed to by src
+ * @dest: char type string
+ * @src: char type string
+ * Description: Copy the string pointed to by pointer `src` to
+ * the buffer pointed to by `dest`
+ * Return: Pointer to `dest
  */
-void my_putchar(long var)
+
+char *_strcpy(char *dest, char *src)
 {
-	/* print '-' for negative numbers */
-	if (var < 0)
-	{
-		_putchar('-');
-		var = var * -1;
-	}
+int i = 0;
 
-	/* Print Zero */
-	if (var == 0)
-		_putchar('0');
-
-	if (var / 10)
-		my_putchar(var / 10);
-	_putchar(var % 10 + '0');
+while (src[i] != '\0')
+{
+dest[i] = src[i];
+i++;
 }
-
-/**
- * print_array - print `n` elements of an array of integers
- * @arr: int type array pointer
- * @n: int type integer
- * Description: Numbers must be separated by comma and space.
- * You can only use _putchar to print.
- */
-
-void print_array(int *arr, int n)
-{
-	int i;
-
-	for (i = 0; i < n; i++)
-	{
-		my_putchar(arr[i]);
-		if (i != n - 1)
-		{
-			_putchar(',');
-			_putchar(' ');
-		}
-	}
-	_putchar('\n');
+dest[i] = '\0';
+return (dest);
 }
