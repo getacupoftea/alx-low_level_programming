@@ -137,7 +137,7 @@ exit(98);
 	;
 
 ln = l1 + l2 + 1;
-a = malloc(ln * sizeof(char))
+a = malloc(ln *sizeof(char))
 	;
 if (a == NULL)
 {
@@ -157,7 +157,6 @@ t = mul(argv[2][ti], argv[1], l1 - 1, a, (ln - 2) - i);
 	free(a);
 	exit(98);
 }
-
 }
 _print(a, ln - 1);
 return (0);
