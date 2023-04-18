@@ -6,10 +6,10 @@ char *_strcopy(char *dest, char *src);
 dog_t *new_dog(char *name, float age, char *owner);
 
 /**
- * _strlen - Finds the length of a string.
- * @str: The string to be measured.
+ * _strlen - To Find the length of a string.
+ * @str: String to be measured.
  *
- * Return: The length of the string.
+ * Return: To the length of the string.
  */
 int _strlen(char *str)
 {
@@ -22,12 +22,12 @@ int _strlen(char *str)
 }
 
 /**
- * _strcopy - Copies a string pointed to by src, including the
+ * _strcopy - This copy a string pointed to by src, including the
  *            terminating null byte, to a buffer pointed to by dest.
  * @dest: The buffer storing the string copy.
  * @src: The source string.
  *
- * Return: The pointer to dest.
+ * Return: Return the pointer to dest.
  */
 char *_strcopy(char *dest, char *src)
 {
@@ -81,3 +81,4 @@ dog_t *new_dog(char *name, float age, char *owner)
 
 	return (doggo);
 }
+
