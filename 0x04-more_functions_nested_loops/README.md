@@ -14,4 +14,14 @@ The function takes an integer parameter c, which is assumed to represent the ASC
 The if statement checks if the value of c corresponds to an uppercase letter. In ASCII, uppercase letters have values between 65 ('A') and 90 ('Z').
 If c is within the specified range, the function returns 1, indicating that the character is an uppercase letter.
 If c is not within the specified range, the function returns 0, indicating that the character is not an uppercase letter.
-In summary, the _isupper function is designed to determine whether a given character, represented by its ASCII code (c), is an uppercase letter. The function returns 1 if the condition is true and 0 otherwise.
+In summary, the _isupper function determines whether a given character, represented by its ASCII code (c), is an uppercase letter. The function returns 1 if the condition is true and 0 otherwise.
+
+For task 1, The function takes an integer parameter c, which represents the ASCII code of a character.
+
+The if statement checks if the ASCII code corresponds to a digit. In ASCII, the digits '0' to '9' have codes from 48 to 57.
+
+If the condition is true, the function returns 1, indicating that the character is a digit.
+
+If the condition is false, the else block is executed, and the function returns 0, indicating that the character is not a digit.
+
+In summary, the _isdigit function checks if a given character (represented by its ASCII code) is a digit between '0' and '9'. It returns 1 if the condition is true and 0 otherwise. This function can be used to determine whether a character is a numeric digit in C programming.
