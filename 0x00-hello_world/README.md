@@ -47,8 +47,9 @@ You are not allowed to use printf
 Your program should end with the value 0
 The filename is 4-puts.c
 
-Explanation: quite simple right? yes. This says to create a C program, so yeah : I vi into the file "4-puts.c" #include <stdio.h> header file, then my comments, and the main function,and then open curly braces, and the function puts toprint exactly what was given in the task. One sweet thing about using the puts function is that it does not require "\n" to print a new line like the printf function.
+Explanation: quite simple right? yes. This says to create a C program, so yeah : I vi into the file "4-puts.c" #include <stdio.h> header file, then my comments, and the main function,and then open curly braces, and the function puts toprint exactly what was given in the task. One sweet thing about using the puts function is that it does not require "\n" to print a new line like the printf function. Remember to add the semicolons, the retun value and close curly braces.
 
+TASK 5:
 
 
 
