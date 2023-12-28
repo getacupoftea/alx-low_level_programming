@@ -47,11 +47,44 @@ You are not allowed to use printf
 Your program should end with the value 0
 The filename is 4-puts.c
 
-Explanation: quite simple right? yes. This says to create a C program, so yeah : I vi into the file "4-puts.c" #include <stdio.h> header file, then my comments, and the main function,and then open curly braces, and the function puts toprint exactly what was given in the task. One sweet thing about using the puts function is that it does not require "\n" to print a new line like the printf function. Remember to add the semicolons, the retun value and close curly braces.
+Explanation: quite simple right? yes. This says to create a C program, so yeah : I vi into the file "4-puts.c" #include <stdio.h> header file, then my comments, and the main function,and then open curly braces, and the function puts toprint exactly what was given in the task. One sweet thing about using the puts function is that it does not require "\n" to print a new line like the printf function. Remember to add the semicolons, the retun value and close curly braces. Remember, we are to print exactly "Programming is like building a multilingual puzzle, i.e with the double quotes at the beginning, and to do that, I used the escape character ("\"Programming is like building a multilingual puzzle), this will print exactly with the double quotes.
 
-TASK 5:
+TASK 5: Write a C program that prints exactly "with proper grammar, but the outcome is a piece of art," followed by a new line.
+
+Use the function printf
+You are not allowed to use the function puts
+Your program should return 0
+Your program should compile without warning when using the -Wall gcc option
+
+Explanation: the task says to print exactly what is in the double quotes, but this time using the printf function. This is printf, so I used the "\n" to print the new line.
+
+TASK 6: Write a C program that prints the size of various types on the computer it is compiled and run on.
+
+You should produce the exact same output as in the example
+Warnings are allowed
+Your program should return 0
+You might have to install the package libc6-dev-i386 on your Linux to test the -m32 gcc option
+
+Well, for me, I didn't have to intsall that package, cause I am using my sandbox, and this has everything intsalled in it for me. Now, the task says to print the sizes of various data types. I used the printf function and sizeof to print the sizes of the data types.
 
 
+ADVANCED TASK: Write a script that generates the assembly code (Intel syntax) of a C code and save it in an output file.
+
+The C file name will be saved in the variable $CFILE.
+The output file should be named the same as the C file, but with the extension .s instead of .c.
+Example: if the C file is main.c, the output file should be main.s
+
+Explanation: this tasks says to write a script, that generates the assembly code of a C file, but using intel syntax. There is no specific output filename. This is similar to the previous task, the only difference is to use the intel syntax. The option can be found in the gcc man page.
+
+ADVANCED TASK: Write a C program that prints exactly and that piece of art is useful" - Dora Korpar, 2015-10-19, followed by a new line, to the standard error.
+
+You are not allowed to use any functions listed in the NAME section of the man (3) printf or man (3) puts
+Your program should return 1
+Your program should compile without any warnings when using the -Wall gcc option
+
+Explanation: Trust me, only God knows what I did here, but I did anyways.
+
+Thabks to my peers for making this a success though, Lol
 
 Well, just to hint you; they say C programming is fun, but let’s see how true that is. Winks
 NB: remember to make your codes an executable file, it’s a script; to do that: it is chmod u+x filename
